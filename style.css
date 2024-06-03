@@ -1,0 +1,371 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  line-height: 1.6;
+}
+
+/* Navbar Styles */
+.navbar {
+  background: #333;
+  color: #fff;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar nav ul li {
+  margin: 0 0.5rem;
+}
+
+.navbar nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease; /* Smooth color transition */
+}
+
+.navbar nav ul li a:hover {
+  color: #ff6600; /* Change color on hover */
+}
+
+/* Download Button Styles */
+.download-btn {
+  background: red;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.download-btn:hover {
+  background: #ff6600; /* Change background color on hover */
+}
+
+/* Hero Section Styles */
+.hero-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+.hero-section .hero-content {
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.hero-section .hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-section .hero-content p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Call-to-Action Button Styles */
+.cta-buttons .cta-btn {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin: 0 0.5rem;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+.cta-buttons .cta-btn:hover {
+  background: #ff6600; /* Change background color on hover */
+  color: #fff; /* Change text color on hover */
+}
+
+/* Hero Image Styles */
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease; /* Smooth transform transition */
+}
+
+.hero-image img:hover {
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* Features Section Styles */
+.features-section {
+  padding: 2rem;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.features-section h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.features-section .feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.features-section .feature:hover {
+  transform: translateY(-10px); /* Slight lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.features-section .feature-content {
+  max-width: 600px;
+  text-align: left;
+  font-style: italic; /* Italic text */
+}
+
+.features-section .feature-content h3 {
+  font-size: 1.5rem;
+  font-weight: bold; /* Bold text */
+  margin-bottom: 0.5rem;
+}
+
+.features-section .feature-content p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: justify; /* Justify text */
+}
+
+.gallery-images img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease; /* Smooth transform transition */
+}
+
+.gallery-images img:hover {
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+/* Gallery Section Styles */
+.gallery-section, .testimonials-section, .pricing-section, .contact-section {
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Footer Styles */
+footer {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .hero-section {
+      flex-direction: row;
+      justify-content: space-around;
+  }
+
+  .hero-section .hero-content {
+      text-align: left;
+  }
+
+  .features-section .feature {
+      flex-direction: row;
+      justify-content: space-around;
+  }
+
+  .gallery-images{
+      display: flex;
+      gap: 1rem;
+  }
+}
+.testimonials-section img {
+  display: flex;
+  max-width: 50%;
+  height: auto;
+  justify-content: center;
+}
+.testimonials-section h1{
+  color: red;
+
+}
+.testimonial{
+  display: flex;
+}
+/* Pricing Section Styles */
+.pricing-section {
+  padding: 2rem;
+  text-align: center;
+  background: #f9f9f9;
+}
+
+.pricing-section h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.pricing-cards {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap; /* Ensures cards wrap on smaller screens */
+}
+
+.pricing-plan {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  flex: 1;
+  min-width: 250px; /* Minimum width to ensure cards are readable */
+  max-width: 300px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+  text-align: left; /* Align text to left for better readability */
+}
+
+.pricing-plan h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.pricing-plan p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  text-align: justify; /* Justify text */
+}
+
+.pricing-plan ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.pricing-plan ul li {
+  margin-bottom: 0.5rem;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.pricing-plan ul li::before {
+  content: '✔'; /* Checkmark symbol */
+  position: absolute;
+  left: 0;
+  color: #ff6600; /* Accent color for checkmark */
+}
+
+.pricing-plan:hover {
+  transform: translateY(-10px); /* Slight lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Pricing Plan Button Styles */
+.pricing-plan .btn {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-top: 1rem;
+  width: 100%;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transitions */
+}
+
+.pricing-plan .btn:hover {
+  background: #ff6600; /* Change background color on hover */
+  color: #fff; /* Change text color on hover */
+}
+
+/* Contact Section Styles */
+.contact-section {
+  padding: 2rem;
+  text-align: center;
+  background: #f1f1f1;
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  margin: 2rem auto; /* Center the section */
+  max-width: 800px; /* Set a max width for better readability */
+}
+
+.contact-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  color: #333; /* Darker color for better readability */
+}
+
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.contact-section input, 
+.contact-section textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.contact-section input:focus, 
+.contact-section textarea:focus {
+  border-color: #ff6600; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(255, 102, 0, 0.5); /* Add shadow on focus */
+  outline: none; /* Remove default outline */
+}
+
+.contact-section textarea {
+  height: 150px; /* Set a fixed height for the textarea */
+  resize: vertical; /* Allow vertical resizing only */
+}
+
+.contact-section button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1rem;
+}
+
+.contact-section button:hover {
+  background: #ff6600; /* Change background color on hover */
+  transform: translateY(-3px); /* Slight lift on hover */
+}
+
+.contact-section button:active {
+  transform: translateY(0); /* Reset position on click */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on click */
+}
+.contact-section img{
+  display: flex;
+  width: 100%;
+}
+
+
